@@ -8,4 +8,4 @@ game.state.add('GameState', GameState);
 game.state.add('BootState', BootState);
 game.state.add('HomeState', HomeState);
 game.state.add('PreloadState', PreloadState);
-game.state.start('GameState');
+game.state.start('PreloadState');

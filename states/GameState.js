@@ -5,7 +5,7 @@ var GameState = {
         this.background.inputEnabled = true;
         this.background.events.onInputDown.add(this.placeItem, this);
 
-        this.pet = this.game.add.sprite(100, 400, 'pet');
+        this.pet =  this.game.add.sprite(100, 400, 'pet');
         this.pet.anchor.setTo(0.5);
 
         this.pet.animations.add('funnyfaces', [1, 2, 3, 2, 1], 7, false);
@@ -154,7 +154,7 @@ var GameState = {
         }
     },
     gameOver: function() {
-        this.game.state.restart();
+        this.state.start('HomeState', true, false, 'GAME OVER!');
     }
         
 
